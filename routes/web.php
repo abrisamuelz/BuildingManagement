@@ -16,6 +16,7 @@ use App\Http\Controllers\BuildingController;
 */
 
 Route::get('/', function () {
+    return redirect()->route('buildings.index');
     return view('welcome');
 });
 
